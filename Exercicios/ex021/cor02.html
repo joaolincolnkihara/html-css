@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgb(63, 63, 63),rgb(80, 80, 80));
+            height: 600px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        header > nav{
+            background-color: dimgray;
+            padding: 5px;
+            border: 10px;
+            margin: 5px;
+            box-shadow: 3px 3px 6px dimgray;
+        }
+        a{
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+            padding: 5px;
+            border: 10px;
+            border-radius: 10px;
+        }
+        aside{
+            background-color: rgb(199, 202, 206);
+            margin: 5px;
+            padding: 5px;
+
+        }
+        article{
+            background-color: rgba(141, 141, 141, 0.534);
+            margin-bottom: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        footer > p{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <p>Esporte Política tecnologia</p>
+        <aside>
+            <h2>Notícias sobre o Brasil</h2>
+            <p class="especial">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit corrupti ipsam harum aut assumenda possimus cupiditate, labore adipisci alias earum odit dicta obcaecati maxime. Sequi, amet. Hic alias tempore labore.</p>
+            <article>Artigo publicado por Felipinisa</article>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por João</p>
+    </footer>
+</body>
+</html>

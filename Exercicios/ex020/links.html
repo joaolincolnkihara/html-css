@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-shadow: 1px 1px 0px black;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited/*link visitado*/{
+            color: rgb(114, 3, 3);
+        }
+        a:hover/*passar o mouse em cima*/{
+            text-decoration: underline;
+            color: black;
+        }
+        a.especial{
+            background-color: rgb(245, 131, 131);
+            color: black;
+        }
+        a:active/*link ativado*/{
+            color: yellow
+        }
+        a::after/*::=pseudo elemento/::after= frase colocada dps da tag 'a'*/{
+            content: '[link]';
+            color: red;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=YG3EhWlBaoI&list=RDu3cr0EUKgNA&index=3" target="_blank">link01</a></li>
+        <li><a href="https://youtube.com/watch?v=t9KTSbKuxi4&list=RDu3cr0EUKgNA&index=2&pp=8AUB" target="_blank" class="especial">link02</a></li>
+        <li><a href="https://www.youtube.com/watch?v=27FswS3KESk&list=RDu3cr0EUKgNA&index=7" target="_blank">link03</a></li>
+    </ul>
+</body>
+</html>
