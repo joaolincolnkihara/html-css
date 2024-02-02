@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Passion1';
+    src: url('fontes/PassionOne-Bold.ttf') format('truetipe');
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetipe'); 
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: -8px;
+}
+h1.titulo{
+    margin: auto;
+    padding-top: 20px;
+    font-size: 10vw;
+    font-family: 'Passion One', cursive;
+}
+p.subtitulo{
+    margin: auto;
+    padding: 10px;
+}
