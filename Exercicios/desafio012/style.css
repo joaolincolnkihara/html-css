@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family:'Passion1';
-    src: url('fontes/PassionOne-Bold.ttf') format('truetipe');
-}
-@font-face {
-    font-family:'Sriracha';
-    src: url('fontes/Sriracha-Regular.ttf') format('truetipe'); 
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 header{
     background-color: black;
@@ -17,11 +11,17 @@ header{
 }
 h1.titulo{
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 10vw;
     font-family: 'Passion One', cursive;
 }
 p.subtitulo{
     margin: auto;
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p.subtitulo > a{
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
