@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*Estilo para tela*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header>h1{
+    font-size: 3em;
+}
+menu li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+menu li:hover{
+    text-decoration: underline;
+    color: aliceblue;
+    display: inline-block;
+}
+main h2{
+    text-align: center;
+}
+article{
+    width: 50%;
+    display: block;
+    margin: auto;
+
+}

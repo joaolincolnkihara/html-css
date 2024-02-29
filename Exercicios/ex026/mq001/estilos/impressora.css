@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+}
+article::after{
+    content: "Esse artigo foiimpresso atraves de www.iufusgiuiu/jj.com";
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+header{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header>h1{
+    font-size: 3em;
+}
