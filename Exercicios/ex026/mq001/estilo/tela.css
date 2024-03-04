@@ -10,12 +10,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
+.menu{
+    display: block;
+    text-align: justify;
+}
 header{
     background-color: black;
     color: white;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 header>h1{
     font-size: 3em;
@@ -25,11 +29,16 @@ menu li{
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
 }
 menu li:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: aliceblue;
     display: inline-block;
+    background-color: grey;
+    padding: 5px;
+
 }
 main h2{
     text-align: center;
