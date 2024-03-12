@@ -20,24 +20,21 @@
 
                 <form action="login.php" method="post">
                     <div class="campo">
-                        <span class="material-symbols-outlined"> person</span>
+                        <label for="iemail"><span class="material-symbols-outlined"> person</span></label>
                         <input type="email" name="email" id="iemail" placeholder="seu e-mail" required maxlength="35" autocomplete="email">
-                        <label for="iemail">email</label>
+                        
                     </div>
 
                     <div class="campo">
-                        <span class="material-symbols-outlined">vpn_key</span>
+                        <label for="isenha"><span class="material-symbols-outlined">vpn_key</span></label>
                         <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20">
-                        <label for="isenha">senha</label>
                     </div>
 
-                    <div>
-                        <input type="submit" value="Entrar">
-                    </div>
-                    <div>
-                        <a href="esqueci.html">Esqueci a senha</a>
-                        <span class="material-symbols-outlined">mail</span>
-                    </div>
+                        <div class="entrar"><input type="submit" value="Entrar"></div>
+
+                        <a href="esqueci.html" class="botao">Esqueci a senha
+                        <span class="material-symbols-outlined">mail</span></a>
+
                 </form>
             </div>
         </section>
