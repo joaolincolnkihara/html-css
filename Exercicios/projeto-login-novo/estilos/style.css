@@ -34,7 +34,7 @@ section#login{
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 530px;
     border-radius: 20px;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
@@ -66,11 +66,34 @@ section#login>div#formulario>p{
 div.campo{
     display: block;
     background-color: #5f2c82;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
-    padding: 5px;
+    height: 100%;
+    padding-right: 3px;
     margin: 5px 0px;
 }
+
+form>div.campo>span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+    height: 100%;
+    transform: translatey(5px);
+}
+
+form>div.campo>input{
+
+    background-color: #94CFCD;
+    width: calc(100% - 45px);
+    font-size: 1em;
+    height: 45px;
+    transform: translateY(-4px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
 
 body>main>section#login>div#formulario>form>div.entrar>input[type=submit]{
     display: block;
@@ -93,7 +116,7 @@ form > a.botao{
     text-align: center;
     text-decoration: none;
     border: 1px solid #49a09d;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: white;
     color: #49a09d;
     margin-top: 5px;
