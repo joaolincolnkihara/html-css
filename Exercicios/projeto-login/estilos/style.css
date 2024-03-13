@@ -1,95 +1,137 @@
 @charset "UTF-8";
 
+/*
+Paleta de core:
+verde: #49a09d
+lilas: #5f2c82
+*/
+
 *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: #5F2C82;
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
 }
 
 main{
-    display: block;
     position: relative;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
-section{
+section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
+    transform: translate(-50%, -50%);
     overflow: hidden;
+
+    background-color: white;
     width: 250px;
-    height: 515px;
+    height: 530px;
     border-radius: 20px;
-    box-shadow: 2px 1px 3px #381a4d7c;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
 }
 
-section>.imagem{
-    background: #5F2C82 url(../imagens/pexels-mel-gomes-13183160.jpg);
+div#imagem{
+    display: block;
+    background: #5f2c82 url(../imagens/pexels-mel-gomes-13183160.jpg) no-repeat;
+    background-position: left bottom;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left right;
     height: 200px;
 }
 
-section h1{
+div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+section#login>div#formulario>h1{
     text-align: center;
+    margin-bottom: 10px;
+}
+
+section#login>div#formulario>p{
+    font-size: .8em;
+}
+
+div.campo{
+    display: block;
+    background-color: #5f2c82;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    padding-right: 3px;
+    margin: 5px 0px;
+}
+
+form>div.campo>span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+    height: 100%;
+    transform: translatey(5px);
+}
+
+form>div.campo>input{
+
+    background-color: #94CFCD;
+    width: calc(100% - 45px);
+    font-size: 1em;
+    height: 45px;
+    transform: translateY(-4px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+body>main>section#login>div#formulario>form>div.entrar>input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #49a09d;
+    color: white;
+    cursor: pointer;
+}
+
+body>main>section#login>div#formulario>form>div.entrar>input[type=submit]:hover{
+    background-color: #2d6462;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #49a09d;
+    border-radius: 8px;
+    background-color: white;
+    color: #49a09d;
+    margin-top: 5px;
     padding: 5px;
     padding-top: 10px;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
 }
 
-section p{
-    font-size: 12px;
-    padding: 10px;
-}
-
-div{
-    margin-top: 5px;
-    margin-left: 7px;
-    margin-right: 7px;
-}
-
-.email{
-    background-color: #5F2C82;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.senha{
-    background-color: #5F2C82;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.enviar{
-    display: block;
-    text-align: center;
+form>a.botao:hover{
+    background-color: #2d6462;
     color: white;
-    padding: 5px;
-    background-color: #6eccc9;
-    border-radius: 7px;
 }
-.enviar:hover{
-    background-color: #53AAA7;
-}
-.esenha{
-    display: block;
-    background-color: white;
-    border: 1px solid #94CFCD;
-    padding: 5px;
-    text-align: center;
-    border-radius: 7px;
-}
-.esenha:hover{
-    background-color: #6CD3CF;
-}
-.material-symbols-outlined{
-    color: white;   
+
+form > a.botao > span{
+    font-size: .8em;
 }
