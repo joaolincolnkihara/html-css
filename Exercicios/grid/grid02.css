@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    /*
+    CONTENT:
+    justify-content: center;
+    /*alinhamento eixo x/
+    align-content: center;
+    /*alinhamento eixo y/
+    */
+
+    /*
+    ITENS:
+    justify-items: center;
+    align-items: center;
+    /*alinha no espaço da célula/
+    */
+    
+
+}
+
+.container > div {
+    background-color: #7159c1;
+    
+    /*
+    ITENS
+    height: 50%;
+    width: 50%;
+    */
+}
+
+/*#self{
+    
+    /*SELF:
+    justify-self: center;
+    align-self: center;
+    /*faz o msm q o ITENS porem na célula separada/
+    */
+

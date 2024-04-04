@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(231, 231, 197);
+        }
+        main{
+            background-color: rgb(235, 208, 175);
+            padding: 20px;
+            margin: auto;
+            text-align: justify;
+            width: 70%;
+            height: 20vh;
+            border-radius: 10px;
+            margin-top: 40%;
+        }
+        main>h1{
+            text-align: center;
+
+        }
+        main>form{
+            padding: 20px;
+        }
+        main>form>p{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Meu primeiro formulario</h1>
+        <form action="cadastro.php" method="get" autocomplete="off">
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
