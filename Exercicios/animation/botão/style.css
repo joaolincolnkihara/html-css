@@ -1,0 +1,94 @@
+@keyframes spin {
+    /*transform = transforma um elemento, nesse caso esta rodando em 360 graus*/
+    to{
+        transform: rotate(0deg);
+    }from{
+        transform: rotate(360deg);
+    }
+}
+@keyframes background-transform {
+    0%{
+        background-color: #dddddd;
+    }
+    100%{
+        background-color: yellowgreen;
+    }
+}
+@keyframes virificado {
+    0%{
+        display: none;
+    }
+    100%{
+        display: flex;
+    }
+    
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#verificar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    height: 56px;
+    width: 250px;
+    background-color: #dddddd;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+
+    animation-name: background-transform;
+    animation-duration: 400ms;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;/*forwards = mantem a animação no final dela*/
+}
+
+.spin{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+
+    border: solid 3px white;
+    border-bottom-color: transparent;
+
+    /*
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    */
+    animation: spin 1s linear infinite;
+    
+}
+
+.container .check-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: yellowgreen;
+    padding-top: 5px;
+
+    animation-name: virificado;
+    /*animation-timing-function = muda a velocidade do inicio, meio e fim da animação*/
+    animation-timing-function: ease-in-out;
+
+    /*animation-duration = determina a duração*/
+    animation-duration: 400ms;
+
+    /*animation-delay = determina o tempo dps q a animação começa*/
+    animation-delay: 3s;
+
+    /*backwards = mantem a animação no inicio dela*/
+    animation-fill-mode: backwards;
+}
