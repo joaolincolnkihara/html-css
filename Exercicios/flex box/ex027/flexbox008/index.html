@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        #container{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 200px;
+
+            background-color: lightcoral;
+        }
+        .item{
+
+
+            background-color: rgb(216, 216, 68);
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        #f1{
+            align-self: auto;
+        }
+        #f2{
+            align-self: flex-start;
+        }
+        #f3{
+            align-self: flex-end;
+        }
+        #f4{
+            align-self: center;
+        }
+        #f5{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="f1">A</div>
+        <div class="item" id="f2">B</div>
+        <div class="item" id="f3">C</div>
+        <div class="item" id="f4">D</div>
+        <div class="item" id="f5">E</div>
+    </div>
+</body>
+</html>
