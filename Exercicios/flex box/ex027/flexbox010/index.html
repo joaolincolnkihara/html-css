@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        div#container{
+            display: flex;
+            flex-flow: row wrap;
+
+            background-color: lightgrey;
+            width: 700px;
+        }
+        /* div.itens{
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            margin: 1px;
+        } */
+        div.itens1{
+            /* flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1; */
+            flex: 0 1 150px;
+
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            margin: 1px;
+        }
+        div.itens2{
+            /* flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1; */
+            flex: 2 1 150px;
+
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            margin: 1px;
+        }
+        div.itens3{
+            /* flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 1; */
+            flex: 1 1 150px;
+
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="itens1">a</div>
+        <div class="itens2">b</div>
+        <div class="itens3">c</div>
+    </div>
+</body>
+</html>
