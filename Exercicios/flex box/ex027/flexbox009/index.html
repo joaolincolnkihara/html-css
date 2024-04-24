@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        body{
+
+        }
+        .container{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: lightgray;
+            width: 550px;
+        }
+        /* 
+        NORMALMENTE FEITO ASSIM
+            .itens{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+
+            flex-basis: 200px;
+        } */
+        .itens1{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+
+            flex-basis: 100px;
+        }
+        .itens2{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+
+            flex-basis: 200px;
+        }
+        .itens3{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+
+            flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens1">a</div>
+        <div class="itens2">bbbbbbbbbbbbbb</div>
+        <div class="itens3">c</div>
+    </div>
+</body>
+</html>
