@@ -120,24 +120,29 @@ button{
 .cor4{background-color: #454C44;}
 .cor4:focus{border: 2px solid #489EFF}
 
-/* CELULAR VIOLETA */
-#celular-violeta{
-    display: none;
-    width: 100%;
-    overflow: hidden;
-    width: 100%;
-}
 /* CELULAR PRETO */
 #celular-preto{
     /* PRECISA */
+    position: relative;
     display: flex;
     width: 100%;
     overflow: hidden;
     width: 100%;
 }
 
+/* CELULAR VIOLETA */
+#celular-violeta{
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+
 /*CELUALAR CREME     */
 #celular-creme{
+    position: relative;
     display: none;
     width: 100%;
     overflow: hidden;
@@ -146,8 +151,25 @@ button{
 
 /* Celular verde */
 #celular-verde{
+    position: relative;
     display: none;
     width: 100%;
     overflow: hidden;
     width: 100%;
 }
+
+/* RADIO */
+    .nav-manual{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-manual .manual-btn{
+        border: 1px solid #ff0054;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
