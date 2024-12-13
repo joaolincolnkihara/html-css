@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #CBCACC;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+
+    
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+
+
+img{
+    /* PRECISA */
+    width: 100%;
+    height: 340px;
+    animation: slider 16s linear infinite;
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translate(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+}
+
+/* ITENS */
+.itens{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.title,.preco,.selecao-cor,button,.mais-informcoes{
+    margin-bottom: 10px;
+}
+
+.title,.preco{
+    font-weight: bolder;
+}
+
+.selecao-cor{
+    color: rgba(94, 94, 94, 0.774);
+}
+
+button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mais-informcoes{
+    align-self: center;
+}
+
+.mais-informcoes a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+/* CORES */
+
+.cores{
+    display: flex;
+    margin: 0 5px 10px 5px;
+}
+.cor1,.cor2,.cor3,.cor4{
+    background-color: black;
+    border-radius: 50%;   
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    border: 1px solid #5757578e;
+    cursor: pointer;
+}
+.cor1{background-color: black;}
+.cor1:focus{border: 2px solid #489EFF}
+.cor2{background-color: #EEDEE9;}
+.cor2:focus{border: 2px solid #489EFF}
+.cor3{background-color: #F9F0E7;}
+.cor3:focus{border: 2px solid #489EFF}
+.cor4{background-color: #454C44;}
+.cor4:focus{border: 2px solid #489EFF}
+
+/* CELULAR PRETO */
+#celular-preto{
+    /* PRECISA */
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* CELULAR VIOLETA */
+#celular-violeta{
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*CELUALAR CREME     */
+#celular-creme{
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Celular verde */
+#celular-verde{
+    position: relative;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* RADIO */
+    .nav-manual{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-manual .manual-btn{
+        border: 1px solid #ff0054;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bnt">
+            <input type="radio" name="bnt-radio" id="radio1">
+            <input type="radio" name="bnt-radio" id="radio2">
+            <input type="radio" name="bnt-radio" id="radio3">
+            <input type="radio" name="bnt-radio" id="radio4">
+            <div id="celular-preto">
+                <img src="img/samsumg-preto.png" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219671-800-auto?v=638514816211870000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219675-800-auto?v=638514816334170000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219681-800-auto?v=638514816460800000&width=800&height=auto&aspect=true" alt="">
+            </div>
+            <div id="celular-violeta">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219729-800-auto?v=638514865017830000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219733-800-auto?v=638514865069100000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219737-800-auto?v=638514865249200000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219742-800-auto?v=638514865389730000&width=800&height=auto&aspect=true" alt="">
+            </div>
+            <div id="celular-creme">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219633-800-auto?v=638514863698600000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219636-800-auto?v=638514863767000000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219642-800-auto?v=638514863867270000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219646-800-auto?v=638514864006400000&width=800&height=auto&aspect=true" alt="">
+            </div>
+            <div id="celular-verde">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219698-800-auto?v=638514864264100000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219701-800-auto?v=638514864317200000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219706-800-auto?v=638514864586430000&width=800&height=auto&aspect=true" alt="">
+                <img src="https://samsungbrshop.vtexassets.com/arquivos/ids/219710-800-auto?v=638514864758200000&width=800&height=auto&aspect=true" alt="">
+            </div>
+            <div class="nav-auto">
+                <div class="auto-bnt1"></div>
+                <div class="auto-bnt2"></div>
+                <div class="auto-bnt3"></div>
+                <div class="auto-bnt4"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <div class="itens">
+            <p class="title">Celular Samsung Galaxy S23 5G</p>
+            <p class="preco">R$ 4.049,10</p>
+            <p class="selecao-cor">selecionou cor: <span class="msg"></span></p>
+            <div class="cores">
+                <div class="cor1" tabindex="0" onclick="corPreto()"></div>
+                <div class="cor2" tabindex="0" onclick="corVioleta()"></div>
+                <div class="cor3" tabindex="0" onclick="corCreme()"></div>
+                <div class="cor4" tabindex="0" onclick="corVerde()"></div>
+            </div>
+            <button>ADICIONAR AO CARRINHO</button>
+            <div class="mais-informcoes"><a href="#">MAIS INFORMAÇÕES</a></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
